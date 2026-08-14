@@ -1,0 +1,50 @@
+# GitHub Pages Configuration
+title: "Google Antigravity Showcase"
+description: "An interactive introduction to Google Antigravity & developer showcase"
+theme: jekyll-theme-cayman
+show_downloads: false
+google_analytics: 
+
+# GitHub repository settings
+github:
+  is_project_page: true
+  repository_url: "https://github.com"
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins supported on GitHub Pages
+plugins:
+  - jekyll-relative-links
+  - jekyll-feed
+  - jekyll-seo-tag
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Navigation links for header/footer
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "Overview"
+    url: "/docs/overview"
+  - title: "Surfaces & Tools"
+    url: "/docs/surfaces"
+  - title: "What I've Built"
+    url: "/docs/my-journey"
+  - title: "Customizations & Skills"
+    url: "/docs/customizations-guide"
+  - title: "Python SDK Recipes"
+    url: "/docs/sdk-examples"
+  - title: "Model Context Protocol"
+    url: "/docs/mcp-showcase"
+  - title: "Subagents & Scheduling"
+    url: "/docs/subagents-and-scheduling"
+  - title: "Getting Started"
+    url: "/docs/getting-started"
+  - title: "FAQ"
+    url: "/docs/faq"
