@@ -1,2 +1,0 @@
-# Test
-Testing write capabilities.

@@ -1,14 +1,13 @@
 # GitHub Pages Configuration
-title: "Google Antigravity Showcase"
-description: "An interactive introduction to Google Antigravity & developer showcase"
+title: "Mathis × Antigravity — What We Built Together"
+description: "A showcase of real projects built with Google Antigravity: a 4-bit SoC in SystemVerilog, Raspberry Pi sysadmin automation, and more."
 theme: jekyll-theme-cayman
 show_downloads: false
-google_analytics: 
 
 # GitHub repository settings
 github:
   is_project_page: true
-  repository_url: "https://github.com"
+  repository_url: "https://github.com/MathisBonnard/tst_agy2"
 
 # Markdown Processing
 markdown: kramdown
@@ -26,25 +25,13 @@ relative_links:
   enabled: true
   collections: true
 
-# Navigation links for header/footer
+# Navigation
 nav_links:
   - title: "Home"
     url: "/"
-  - title: "Overview"
-    url: "/docs/overview"
-  - title: "Surfaces & Tools"
-    url: "/docs/surfaces"
-  - title: "What I've Built"
-    url: "/docs/my-journey"
-  - title: "Customizations & Skills"
-    url: "/docs/customizations-guide"
-  - title: "Python SDK Recipes"
-    url: "/docs/sdk-examples"
-  - title: "Model Context Protocol"
-    url: "/docs/mcp-showcase"
-  - title: "Subagents & Scheduling"
-    url: "/docs/subagents-and-scheduling"
-  - title: "Getting Started"
-    url: "/docs/getting-started"
-  - title: "FAQ"
-    url: "/docs/faq"
+  - title: "ChipGPT — 4-bit SoC"
+    url: "/docs/chipgpt"
+  - title: "Raspberry Pi SysAdmin"
+    url: "/docs/rpi-sysadmin"
+  - title: "About Antigravity"
+    url: "/docs/about-antigravity"

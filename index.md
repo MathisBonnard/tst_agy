@@ -1,124 +1,94 @@
 ---
 layout: default
-title: "Google Antigravity & Developer Showcase"
+title: "Mathis × Antigravity — What We Built Together"
 permalink: /
 ---
 
-# 🚀 Welcome to Google Antigravity Showcase
+# 🤖 Mathis × Google Antigravity
 
-> **Google Antigravity (AGY)** is Google DeepMind's next-generation, AI-first agentic coding platform. It bridges the gap between passive autocomplete and truly autonomous, collaborative software engineering.
+> A personal showcase of real engineering projects built in collaboration with **Google Antigravity** — an AI-first agentic coding assistant by Google DeepMind.
 
-[![GitHub Pages Status](https://img.shields.io/badge/Status-Live%20on%20GitHub%20Pages-brightgreen?style=flat-square)](#)
-[![Antigravity](https://img.shields.io/badge/Google-Antigravity%202.0-4285F4?style=flat-square&logo=google)](#)
-[![Gemini](https://img.shields.io/badge/Powered%20By-Gemini%20Models-8E75B2?style=flat-square)](#)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](#)
+[![GitHub Pages](https://img.shields.io/badge/Status-Live%20on%20GitHub%20Pages-brightgreen?style=flat-square)](#)
+[![Powered By](https://img.shields.io/badge/Powered%20By-Google%20Antigravity-4285F4?style=flat-square&logo=google)](#)
+[![Repo](https://img.shields.io/badge/GitHub-MathisBonnard-181717?style=flat-square&logo=github)](https://github.com/MathisBonnard)
 
 ---
 
-## 🧭 Site Navigation
+## 🧭 What's in this showcase?
 
-Explore the complete guide and documentation:
+This site documents **real projects** I built with Antigravity acting as an autonomous pair programmer — writing code, running tests, fixing bugs, SSHing into servers, and pushing to GitHub, all from natural language instructions.
 
-| Section | Description | Quick Link |
+| Project | Description | Status |
 | :--- | :--- | :--- |
-| **💡 Antigravity Overview** | Core pillars, architecture & Gemini foundation | [Explore Overview](./docs/overview.md) |
-| **🛠️ Ecosystem & Surfaces** | Desktop 2.0, IDE, CLI (`agy`), and Python SDK | [View Surfaces](./docs/surfaces.md) |
-| **🏆 What I've Done So Far** | Real-world projects, experiments, workflows & milestones | [View My Journey](./docs/my-journey.md) |
-| **⚙️ Customizations & Skills** | Extending Antigravity via Skills, Rules (`AGENTS.md`), and Plugins | [Read Customizations](./docs/customizations-guide.md) |
-| **🐍 Python SDK Recipes** | Real-world code recipes, thought streaming & tool interception | [Explore SDK Recipes](./docs/sdk-examples.md) |
-| **🔌 MCP Integration** | Connect to PostgreSQL, GitHub APIs & internal tools | [View MCP Showcase](./docs/mcp-showcase.md) |
-| **🤖 Subagents & Scheduling** | Multi-agent topologies and background cron jobs | [View Subagents & Tasks](./docs/subagents-and-scheduling.md) |
-| **🏁 Getting Started** | Quickstart installation, setup, and first agent launch | [Start Here](./docs/getting-started.md) |
-| **❓ FAQ** | Frequently asked questions, security, and best practices | [Read FAQ](./docs/faq.md) |
+| 🔧 **[ChipGPT — 4-bit SoC](./docs/chipgpt.md)** | Full RISC CPU with UART, GPIO, Timer & RAM — designed, verified & synthesized in SystemVerilog | ✅ Done |
+| 🍓 **[Raspberry Pi SysAdmin](./docs/rpi-sysadmin.md)** | Remote RAID debugging & USB quirk fix via SSH | ✅ Done |
+| 💡 **[About Antigravity](./docs/about-antigravity.md)** | What Antigravity is and how it works as an agentic assistant | 📖 Reference |
 
 ---
 
-## ⚡ What is Google Antigravity?
-
-Google Antigravity is not just another chatbot in an IDE; it is a **full-stack agentic development runtime** engineered to perform multi-step planning, iterative execution, test validation, and tool orchestration.
-
-```
-+-------------------------------------------------------------------------+
-|                         GOOGLE ANTIGRAVITY                              |
-+--------------------+---------------------+--------------------+---------+
-|  Antigravity 2.0   |   Antigravity IDE   |    CLI (`agy`)     | Python  |
-|  (Desktop App)     |   (In-Editor AI)    |    (Terminal)      |   SDK   |
-+--------------------+---------------------+--------------------+---------+
-|                  Agent Core & Orchestration Engine                     |
-|           - Progressive Disclosure   - Subagent Hierarchies             |
-|           - Secure Sandbox Runtime   - Custom Skills & MCP Tools        |
-+-------------------------------------------------------------------------+
-|                  Gemini Multimodal Foundation Models                    |
-+-------------------------------------------------------------------------+
-```
-
-### Key Pillars:
-1. **Three Interaction Modalities**:
-   - **Passive** (*Tab Supercomplete*): Next-intent code synthesis and predictive navigation.
-   - **Instructive** (*Cmd+I / Inline*): Targeted, localized code refactoring and doc generation.
-   - **Collaborative** (*Agent Mode*): Multi-turn autonomous pair programming with terminal, browser, and file system capabilities.
-2. **True Multitasking & Subagents**:
-   - Background task scheduling (delayed timers, recurring crons).
-   - Subagents (`research`, `self`, custom domain agents) for parallel exploration.
-3. **Extensibility & Context Control**:
-   - **Progressive Disclosure**: Keeps context clean by lazy-loading skill instructions only when needed.
-   - **Model Context Protocol (MCP)**: Native connectivity to external APIs, databases, and services.
-
----
-
-## 🌟 Highlights: What I've Done So Far
-
-Here is a snapshot of my work, experiments, and accomplishments using Google Antigravity:
+## ⚡ Project Highlights
 
 ```mermaid
-graph TD
-    A[Started with Antigravity] --> B[Explored CLI agy & Slash Commands]
-    A --> C[Configured IDE & Desktop 2.0 Environment]
-    B --> D[Autonomous App Prototyping]
-    C --> D
-    D --> E[Custom Skills & Agent Rules Development]
-    D --> F[Multi-Agent Parallel Orchestration]
-    E --> G[Production Workflows & GitHub Publication]
-    F --> G
+graph LR
+    A[Mathis + Antigravity] --> B[🔧 ChipGPT\n4-bit SoC in SystemVerilog]
+    A --> C[🍓 Raspberry Pi\nRAID SysAdmin via SSH]
+    B --> D[RTL Design\nALU · CPU · UART · GPIO · Timer]
+    B --> E[Simulation\nIcarus Verilog + GTKWave]
+    B --> F[Synthesis\nYosys + Graphviz Schematics]
+    C --> G[Diagnose USB-UAS\nErrors on RAID array]
+    C --> H[Apply kernel quirks\n& udev rules remotely]
 ```
 
-### 1. 🏗️ Autonomous Project Scaffolding & Web Applications
-Leveraged Antigravity's agentic loop to scaffold, design, and implement responsive, high-performance web applications using vanilla web technologies, Next.js, and modern CSS architectures with zero boilerplate friction.
+---
 
-### 2. 🧩 Custom Skills & Rules Engineering
-Authored custom `SKILL.md` runbooks and hierarchical `AGENTS.md` / `GEMINI.md` project rules to enforce codebase standards, security policies, and team workflows.
+## 🔧 Project 1 — ChipGPT: A 4-bit SoC in SystemVerilog
 
-### 3. 🤖 Subagent & Background Automation
-Harnessed the `define_subagent` and `schedule` facilities to run automated background builds, test suites, and parallel research tasks while continuing interactive development.
+Starting from a single sentence — *"Create a chip in SystemVerilog, 4-bit, with UART communication"* — Antigravity autonomously designed and implemented a **complete System-on-Chip** from scratch.
 
-### 4. 🐍 Python SDK Integration
-Experimented with `google-antigravity` programmatic agent orchestration to automate codebase navigation, test generation, and streaming tool executions.
+### What was built:
+- **4-bit RISC CPU** with a custom 30-instruction ISA (arithmetic, logic, branches, subroutine calls)
+- **4-bit ALU** with full flag support (Zero, Carry, Negative, Overflow)
+- **Register file** (R0–R3)
+- **UART controller** (TX + RX, 16× oversampling, 8-bit byte mode via MMIO)
+- **GPIO peripheral** (4-bit in/out with direction register)
+- **Timer** with auto-reload and IRQ enable
+- **Bus interconnect** with full memory map (ROM / RAM / MMIO)
+- **Python assembler** for the custom ISA
+- **4 self-checking testbenches** (UART, CPU, SoC integration, Fibonacci math demo)
+- **Yosys synthesis** with Graphviz schematic export (elaborated RTL + gate-level netlist)
+- **GitHub Actions CI** — automated build, test, lint and synth on every push
 
-👉 **[Read the complete breakdown and project case studies in What I've Built & Learned](./docs/my-journey.md)**
+👉 [Full write-up →](./docs/chipgpt.md)
 
 ---
 
-## 📊 Feature Comparison: Antigravity vs Traditional AI Assistants
+## 🍓 Project 2 — Raspberry Pi RAID SysAdmin
 
-| Feature | Traditional AI Copilots | Google Antigravity |
-| :--- | :--- | :--- |
-| **Execution** | Code completion / Single prompt | Multi-step agentic planning & tool calling |
-| **Terminal Integration** | Read-only copy-paste snippets | Direct, sandboxed execution with live feedback |
-| **Subagents** | None (Single thread) | Dynamic spawning of parallel worker agents |
-| **Customizations** | Basic system prompts | Declarative Skills, Rules, MCP, and Hooks |
-| **Background Execution** | Blocks user interface | Asynchronous tasks with reactive notifications |
-| **Desktop Surfaces** | Plugin only | Dedicated Desktop 2.0 App + IDE + CLI + SDK |
+Antigravity SSHed directly into my Raspberry Pi at `192.168.1.30`, diagnosed a RAID array that kept sending email alerts, and applied a kernel-level USB quirk fix — all autonomously.
+
+### What happened:
+- RAID array appeared healthy (`[UU]`) but kept triggering failure alerts
+- Root cause identified: JMicron JMS578 USB adapters (`152d:0578`) running on the UAS driver, causing repeated command errors
+- Applied `usb-storage.quirks` fix in `/boot/cmdline.txt` and created a persistent `udev` rule
+- Rebuilt the degraded RAID array after a clean reboot
+
+👉 [Full write-up →](./docs/rpi-sysadmin.md)
 
 ---
 
-## 🚀 Quick Links & Resources
+## 💡 What is Google Antigravity?
 
-- 📖 [Official Antigravity Documentation](https://antigravity.google/docs)
-- 📦 [Antigravity Python SDK (GitHub)](https://github.com/google-antigravity/antigravity-sdk-python)
-- 📁 [View Project Repository](https://github.com)
+**Google Antigravity** is not a chatbot. It's an **autonomous agentic coding assistant** that can:
+- Write, run, and debug code directly in your terminal
+- SSH into remote machines and fix live systems
+- Spawn parallel sub-agents for research and validation
+- Commit and push to GitHub
+
+👉 [Learn more →](./docs/about-antigravity.md)
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ and powered by <b>Google Antigravity</b>. Hosted seamlessly on <b>GitHub Pages</b>.</sub>
+  <sub>Built with ❤️ and <b>Google Antigravity</b>. Hosted on <b>GitHub Pages</b>.</sub>
 </div>
+
