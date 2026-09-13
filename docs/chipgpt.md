@@ -10,7 +10,23 @@ permalink: /docs/chipgpt
 
 > **Prompt that started it all:** *"Create a chip in SystemVerilog, 4-bit, that can do UART communication."*
 
-From this single sentence, Antigravity autonomously designed, implemented, verified, synthesized, and committed a **complete System-on-Chip** to GitHub — including CPU, peripherals, testbenches, firmware, assembler, CI/CD, and schematic export.
+This project grew from a single line into a complete System-on-Chip — but not in one shot. It was built through a series of deliberate, iterative instructions where I set the direction at each step and Antigravity executed.
+
+---
+
+## 🧭 How I Guided the Project
+
+The chip didn't emerge fully-formed. Each phase was a conscious decision on my part about what to build next, what to verify, and where to push harder:
+
+- **Started simple, then expanded scope:** The first prompt was just "4-bit chip with UART". Once the UART and CPU skeleton were working, I pushed for more — GPIO, a timer, a bus interconnect, a proper memory map. I kept raising the bar.
+- **Demanded real verification:** I explicitly asked for self-checking testbenches, not just "it compiles". I required every feature — TX serialization, RX oversampling, all 30 ISA instructions, flag logic, branch conditions — to have a PASS/FAIL result printed to stdout.
+- **Asked for a working assembler:** Rather than hardcoding hex values, I asked for a proper Python assembler so firmware could be written in human-readable assembly. This led to two real firmware programs — a boot ROM with a UART echo loop, and a Fibonacci math demo.
+- **Pushed for synthesis, not just simulation:** I wanted to see the actual gate-level netlist, not just a passing simulation. This triggered the full Yosys synthesis pipeline and the schematic export.
+- **Tested it on real hardware:** I rebuilt the project on a Raspberry Pi and sent Antigravity the error messages when things broke. It had to adapt the codebase to be compatible with older versions of Icarus Verilog and Yosys on Debian — a real-world portability challenge.
+- **Kept asking about visualization:** I specifically asked how to view waveforms and schematics in a GUI. This drove the addition of GTKWave/Surfer instructions and the `.dot → .svg` Graphviz conversion in the Makefile.
+- **Closed the loop with CI/CD:** I asked for the project to be "ready for GitHub" — clean, reproducible, and automated. That produced the GitHub Actions workflow and the full setup guide.
+
+Throughout all of this, **Antigravity handled the implementation** — writing SystemVerilog, testbenches, Makefiles, Python scripts, and CI YAML — while **I provided the vision, the requirements, and the quality bar.**
 
 ---
 
