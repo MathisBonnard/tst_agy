@@ -97,6 +97,20 @@ No more UAS errors in `dmesg`. RAID array stable. Alert emails stopped.
 
 ---
 
+## 🧭 How the Session Was Guided
+
+This wasn't a single "fix my RAID" command that magically resolved everything. The session was an **iterative collaboration** where I steered Antigravity through a series of decisions and dead ends:
+
+- **Started with the obvious:** I asked Antigravity to check the RAID status — it looked healthy at first glance (`[UU]`), which would have been the end of the investigation for a simpler tool.
+- **Pushed deeper:** I asked it to dig into kernel logs, which revealed the real culprit — USB UAS errors — something that wouldn't have been obvious without understanding the stack.
+- **Tried the expected fix first:** The `usb-storage.quirks` parameter was already in `/boot/cmdline.txt`. Rather than stopping there, I asked Antigravity to check *why* it wasn't working — and it found the drives were still bound to the UAS driver at runtime.
+- **Navigated a risky moment:** Attempting to rebind the USB drivers live (without a reboot) caused one drive to drop out of the array temporarily — putting the RAID in a degraded `[_U]` state. I chose to proceed with a clean reboot rather than try to recover the live binding.
+- **Verified the outcome:** After reboot, I had Antigravity confirm the array was healthy, UAS was no longer loaded, and no new errors appeared in `dmesg`.
+
+The key insight is that **I provided the direction and judgment** (what to investigate next, whether a risk was acceptable, when to reboot) while **Antigravity handled all the execution** (SSH commands, log parsing, writing config files, udev rules).
+
+---
+
 ## 💡 What This Showed About Antigravity
 
 | Capability | How It Was Used |
